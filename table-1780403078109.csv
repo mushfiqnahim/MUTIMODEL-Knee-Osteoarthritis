@@ -1,0 +1,10 @@
+﻿Column,Type,Description
+`id`,int,Unique patient identifier
+`side`,str,Knee side: `L` (left) or `R` (right)
+`subset`,str,Original split indicator (optional)
+`filename`,str,X-ray image filename
+`kl_grade`,int,Target: KL grade (0-4)
+`osteophytes`,int,Osteophyte severity
+`jsn`,int,Joint space narrowing grade
+`osfl`,int,Functional limitation score
+...,...,Additional clinical features

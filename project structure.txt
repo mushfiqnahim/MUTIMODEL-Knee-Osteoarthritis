@@ -1,0 +1,24 @@
+multimodal-knee-oa/
+├── train.py                  # Main training script
+├── predict.py                # Inference script
+├── crossval_ensemble.py      # 5-fold CV + ensemble
+├── requirements.txt          # Python dependencies
+├── README.md                 # This file
+├── .gitignore               # Git ignore rules
+├── data/                    # Dataset directory (not tracked)
+├── output/                  # Training outputs
+│   ├── run_1/
+│   │   ├── best_multitask_oa.pt
+│   │   ├── training_history.csv
+│   │   ├── sector_metrics.csv
+│   │   ├── metrics.json
+│   │   └── logs/
+│   └── run_2/
+├── predictions/             # Inference outputs
+│   ├── predictions.csv
+│   └── inference_summary.json
+└── cv_results/              # Cross-validation outputs
+    ├── fold_1/
+    ├── fold_2/
+    ├── ensemble_predictions.csv
+    └── comparison_report.csv
